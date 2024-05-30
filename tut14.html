@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <title>Document</title>
+    <style>
+        /* p is a selector p means paragraph and this below line changes the colour of all the paragraphs */
+
+        /* p is an element selector */
+
+        /* Just comment out below line to understand id selector. */
+
+       /* p{
+            color: blue;
+         } */
+        
+         /* we just write an id which changes color of the particular selector having the same id */
+
+         /* ID Selector */
+
+        #redElement{
+            color: red;
+        }
+
+        /* Class Selector */
+
+        .redBg{
+            background-color: blue;
+        }
+
+        /* Group Selector */
+
+        /* For example if we want to change the background color of footer and span the below is the example of group selector */
+
+        footer,span{
+            background-color: pink;
+        }
+             
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+
+    <!-- now this paragraph has red colour and blue background colour because of respective id and class respectively -->
+
+    <p id="redElement" class="redBg">This is a simple paragraph to demonstrate css selectors.</p>
+
+    <!-- this paragraph will become red because of id -->
+
+    <p id="redElement">This is a simple paragraph to demonstrate css selectors.</p>
+
+    <div>
+        <p>This is a simple paragraph to demonstrate css selectors.</p>
+
+        <span>This is span</span>
+    </div>
+
+    <footer>This is footer</footer>
+
+</body>
+</html>

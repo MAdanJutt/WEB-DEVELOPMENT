@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Size Units</title>
+    <style>
+        html {
+            font-size: 25px;
+        }
+
+        .container {
+            font-size: 10px;
+            border: 3px solid gold;
+            /* height: 344px; */
+            /* to get full width we use vh for height and vw for width */
+            height: 100vh;
+            /* width: 100px; */
+            width: 100vw;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            /* em is related to parent linke in this example it is related to container */
+            /* font-size: 6em; */
+            /* padding: 3em; */
+        }
+
+        #second {
+            /* rem is related to html not parent */
+            /* font-size: 3rem; */
+            /* padding: 3rem; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+
+</html>

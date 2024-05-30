@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+        }
+        @media only screen and (max-width:300px){
+            body{
+                background-color: red;
+            }
+        }
+        @media only screen and (min-width:300px) and (max-width:500px){
+            body{
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+        @media (min-width:500px) and (max-width:800px){
+            body{
+                display:block;
+                color: black;
+                background-color: yellow;
+            }
+        }
+        @media (min-width:800px){
+            body{
+                background-color: green;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            Home About Contact
+        </nav>
+        <section>
+            <h2>Learn CSS in Urdu</h2>
+        </section>
+        <aside>
+            <h1>More About Us </h1>
+        </aside>
+    </div>
+</body>
+</html>

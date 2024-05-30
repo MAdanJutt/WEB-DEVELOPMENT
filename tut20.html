@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <title>Box Model</title>
+
+    <style>
+
+        /* universal selector */
+        *{
+            box-sizing: border-box;
+            /* basically this universal selector make it applicable for all elements */
+        }
+
+        body{
+            background-color: gold;
+        }
+
+        .container{
+            background-color: rgb(65, 127, 168);
+            border: 4px solid rgb(91, 156, 60);
+
+            /* we can set padding for top bottom left and right as below:display: */
+
+            /* padding-top: 56px;
+            padding-bottom: 55px;
+            padding-right: 34px;
+            padding-left: 43px; */
+
+            /* this is a single padding which applies on all sides */
+
+            /* padding: 19px; */
+
+            /* another way to give padding */
+
+            /* padding : top right bottom left */
+            /* padding : 23px 34px 45px 32px; */
+
+            /* padding can also be given as */
+            /* padding : y(top/bottom) x (left/right) */
+            /* padding : 34px 43px
+            this is done we have to assign the same value for top and bottom and for left and right respecitvely. */
+            
+            padding: 34px 19px;
+            /* margin can be given as padding */
+            /* margin : 43px 21px 54px 25px; */
+
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 233px;
+
+            /* width can be set according to padding */
+            box-sizing: border-box;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>this is heading</h1>
+        <p id="firstpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis itaque est illum laboriosam incidunt reiciendis sed, quisquam atque vero nisi id possimus eos.</p>
+    </div>
+    
+    <div class="container">
+        <h1>this is heading</h1>
+        <p id="seocdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis itaque est illum laboriosam incidunt reiciendis sed, quisquam atque vero nisi id possimus eos.</p>
+    </div>
+
+    <div class="container">
+        <h1>this is heading</h1>
+        <p id="thirdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis itaque est illum laboriosam incidunt reiciendis sed, quisquam atque vero nisi id possimus eos.</p>
+    </div>
+
+</body>
+</html>

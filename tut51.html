@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_Compatible" content="ie=edge">
+    <title>Scope , and Conditional Statements</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        // scope of var is global 
+        var string1 = "This is a string";
+        var string1 = "This is a string2";
+        console.log(string1);
+
+        // another way to assign the variables is let and from on we use let in all the other programes
+
+        // if a variable is let a = u if we want to overwrite the value of a by putting any other string in it it will not allow it because it is a global variable for the whole program prevent from using a single variable for multiple values
+
+        // let a = "u"
+        // console.log(a);
+
+        const a = "this is constant";
+        console.log(a);
+
+                                // conditional statements
+
+        let age = 34;
+        if(age<3)
+        {
+            console.log("you can drink water .")
+        }
+        else if(age==2)
+        {
+            console.log("age is 2");
+        }
+        else
+        {
+            console.log("no you cant")
+        }
+
+                                // Switch Case
+        const cups =45;
+        switch (cups) {
+            case 4:
+                console.log("The value of cup is 4.");
+                break;
+
+                case 42:
+                console.log("The value of cup is 42.");
+                break;
+
+                case 45:
+                console.log("The value of cup is 45.");
+                break;
+
+            default:console.log("Enter the valid value.");
+                break;
+        }
+    
+    </script>
+</body>
+</html>

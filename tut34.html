@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .card{
+            margin: 8px 13px;
+            padding: 23px 13px;
+            /* border: 3px solid royalblue; */
+            background-color: rosybrown;
+
+            /* box-shadow: ofset-x ofset-y blur-radius spread-radius */
+
+            /* box-shadow: 10px 13px plum;  for below */ 
+
+            /* for up shadow we use negative nubers */
+            /* box-shadow: -9px -8px palevioletred; */
+
+            /* blur radius is the third one in px */
+             box-shadow: -9px -8px 12px palevioletred; 
+
+             /* spread radius is the fourth one in the px  */
+             box-shadow: -9px -8px 12px 24px rgba(71, 172, 172, 0.5); 
+             /* alpha means how dark the color is */
+
+             /* to give shadow inside the box */
+              box-shadow: inset 3px 8px yellow; 
+
+              /* to give multiple shadows */
+              box-shadow: inset 3px 8px yellow , 8px 12px peru; 
+        }
+
+        .card h2{
+            text-shadow: 3x 6px rgb(72, 255, 0);
+
+            text-shadow: -4px -5px gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2> Card 1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quod quisquam dicta obcaecati molestias suscipit dolorem porro. Excepturi aut id, natus atque voluptas recusandae veritatis necessitatibus! Dolorum illo vero, repudiandae nam sunt sint qui?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2> Card 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quod quisquam dicta obcaecati molestias suscipit dolorem porro. Excepturi aut id, natus atque voluptas recusandae veritatis necessitatibus! Dolorum illo vero, repudiandae nam sunt sint qui?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2> Card 3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quod quisquam dicta obcaecati molestias suscipit dolorem porro. Excepturi aut id, natus atque voluptas recusandae veritatis necessitatibus! Dolorum illo vero, repudiandae nam sunt sint qui?</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Variables / Custom Properties </title>
+    <style>
+        :root{
+            /* any variable written  the root are global and can be accessed everywhere but all the other variable like the --box-color is a local variable which can be only accessed inside the box */
+            --background-clr: violet;
+            --mxw : 755px;
+            
+        }
+        
+        .box{
+            /* --box-color is a variable in which value of background color is stored */
+            --box-color : blue;
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 3px solid red;
+            margin: 3px 9px;
+            box-shadow: 3px 3px var(--box-color);
+        }
+        .container{
+            display: flex;
+            background-color: var(--background-clr);
+            max-width: var(--mxw);
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

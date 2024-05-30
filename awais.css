@@ -1,0 +1,22 @@
+body {
+    background: black;
+    color: white; /* Added text color for better visibility */
+}
+
+.hello {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #17D4FE;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}

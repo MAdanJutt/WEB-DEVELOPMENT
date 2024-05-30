@@ -1,0 +1,33 @@
+<!-- We will add an external css file of same name -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <title>CSS Tutorial</title>
+
+    <!-- We add an external css file -->
+    <link rel="stylesheet" href="tut13.css">
+
+    <!-- css which comes first had the least orecedence order while css in last have more precedence then the previous ones -->
+
+    <!-- this is an external css -->
+    <style>
+        p{
+            /* if we want that this css would gain more precedence we have to add the word 'important' inside */
+            color: aqua;
+            background-color: gold !important;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is CSS Tutorial</h3>
+
+    <!-- the below line is an example of inline CSS -->
+
+    <p ++style="background-color: darkorchid; font-style: italic; display: grid;">This Tutorial will teach you everything you need to know about HTML/CSS</p>
+
+</body>
+</html>

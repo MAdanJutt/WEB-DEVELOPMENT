@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is HTML Form Tutorial.</h2>
+    <form action="backend.php"></form>
+    <!-- <div></div> is used instead of <br> to break line and it is a good approach to use <div> </div> instead of <br> -->
+
+    <!-- we use label it basically do that if we apply label on Name when we click on Name it is automatically selected -->
+    <label for="name">Name</label>
+    <div>
+        <!-- Name basically gets name from user as input is in text as shown below and all of name="" shows that for this name which is inside the name is stored in backend and remembered using this name. -->
+        <input type="text" name="myName" id="name">
+    </div>
+    <!-- br is used to break line between them but it is not recommended -->
+    <br>
+    <label for="role">Role</label>
+    <div>
+        <!-- Role basically gets role from user as input is in text as shown below -->
+        <input type="text" name="myRole" id="role">
+    </div>
+    <br>
+    <label for="email">Email</label>
+    <div>
+        <!-- Email basically gets name from email as input is in text as shown below -->
+        <input type="email" name="myEmail" id="email">
+    </div>
+    <br>
+    <div>
+        <!-- How to input date  -->
+        <input type="date" name="myDate">
+    </div>
+    <br>
+    <label for="bonus">Bonus</label>
+    <div>
+        <!-- now type = "number means only numbers can be inputed not any sort of text " -->
+        <input type="number" name="myBonus" id="bonus">
+    </div>
+    <br>
+    <label for="checkbox">Are you eligible?</label>
+    <div>
+        <!-- type = "checkbox" means that a checkbox is shown -->
+        <input type="checkbox" name="myCheckbox" id="checkbox">
+    </div>
+    <br>
+    <div>
+        <!-- type = "checkbox" means that a checkbox is shown and checked means that it is by default checked -->
+        Are you eligible?: <input type="checkbox" name="myCheckbox" checked>
+    </div>
+    <br>
+    <label for="male">Male</label>
+    <label for="female">Female</label>
+    <div>
+        <!-- we can choose only one gender because we have assign name = "myGender" to both Male and Female -->
+        Gender: <input type="radio" name="myGender" id="male"> <input type="radio" name="myGender" id="female">
+    </div>
+    <br>
+    <label for="yourself">Write about yourself</label>
+    <div>
+        <!-- we add a text area  -->
+    <br> <textarea name="myTextarea" cols="30" rows="10" id="yourself"></textarea>
+    </div>
+    <br>
+    <div>
+        <label for="car">Car</label>
+        <select name="myCar" id="car">
+            <option value="ind">Indiga</option>
+            <option value="swf">Swift</option>
+
+        </select>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Submit Now">
+    </div>
+    <br>
+    <div>
+        <!-- how to reset form -->
+        Reset Now: <input type="reset" value="Reset Now">
+    </div>
+</body>
+
+</html>

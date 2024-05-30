@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">simple si html</div>
+    <script>
+        let myVar=34;
+        let myVar2="string";
+        let myVar3=true;
+        let myVar4=null;
+        let myVar5=undefined;
+
+        // object manually created
+
+        // let employee = {
+        //     name:"Harry",
+        //     salary:10,
+        //     channel_1:"codewithharry",
+        //     channel_2:"programmingwithharry"    
+        // }
+        // console.log(employee);
+
+        // array
+
+        let names = [1,2,3,"awais",undefined];
+        // array can also be written as
+
+        // let names=(1,2,3,"awais",undefined);
+
+        console.log(names);
+        // to print a specific value of an array
+        console.log(names[0]);
+
+        // another way of creating an array
+
+        let nam = new Array(41,4,2,"awais",undefined);
+        // new is used to create a new object and here array is the object
+        console.log(nam[1]);
+
+        // in order to print the length of an array
+        console.log(nam.length);
+
+        // in order to sort the array
+            nam=nam.sort();
+            console.log(nam);
+
+        // in order to write something at the end of the array
+        nam.push("this is push");
+        console.log(nam);
+
+        // in order to create array of 36 elements or any number we just write
+        // name=new Array(36);
+        // console.log(name);
+
+        
+    </script>
+</body>
+</html>

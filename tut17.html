@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <title>CSS Fonts</title>
+
+    <!-- This is how we can import fonts from website name:
+          GoogleFonts.com  by just pasting the code in to the head of the html-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style> 
+     
+        p{ 
+           /* this is basically known as stack font in below line it means that first font is franklin gothicmedium if it is not available thenfont is arial narrow and so on till the end */
+
+           /* the first and second font sans serif are imported from 
+           google fonts as you can also see their link above */
+
+           /* We are again changing the numbering to check that span tag is bold or not */
+
+           font-family: 'Arial','sans-serif, sans-serif','Franklin Gothic Medium', 'Arial Narrow';
+
+           /* Font size is basically how much small or large the letters are going to be displayed. */
+
+           font-size: 33px;
+           
+           /* Line height means spacing between the fonts */
+            line-height: 1.3em;  
+       }    
+       
+        /*only whats written inside the span tag is bold */
+       span{
+        font-weight: bold;
+       }
+       
+   </style>
+</head>
+<body>
+    <h4>CSS Fonts</h4>
+    <p>Lets play with <span>fonts.</span>It is very exciting.</p>
+</body>
+</html>

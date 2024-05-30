@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <title>Pseudo selectors & more designing</title>
+    <!-- active , hovor , visited are some pseudo selectors that were discussed below -->
+    <style>
+        .container{
+            border: 4px solid sienna;
+            background-color: salmon;
+            margin: 34px auto;
+            padding: 34px;
+            width: 666px;
+        }
+        .btn{
+            background-color: darkorchid;
+            color: maroon;
+            padding: 6px;
+            border: none;
+            /* cursor pointer basically show same option on both icons same on link and on button */
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        a{
+            /* basically this line removes the line below read more link */
+            text-decoration: none;
+            color: maroon;
+        }
+        /* a:hover means what happens when you move cursor on a means on link */
+        a:hover{
+            color: gold;
+            background-color:lightsalmon;
+        }
+        a:visited{
+            color: darkblue;
+        }
+        a:active{
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt a optio nobis consectetur facilis explicabo quod corporis vitae reiciendis dolorem! Adipisci veritatis sapiente nihil nesciunt minus architecto expedita repellendus. Quo esse eaque laboriosam architecto totam?</p>
+
+        <!-- add button and link -->
+        <a href="https" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript | String and String Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, earum voluptatum libero numquam ea nisi id omnis nemo consequuntur ullam minus rerum maiores et. Soluta voluptatibus pariatur tempore quae assumenda ullam nihil enim dolor?</p>
+    </div>        
+    <script>
+        // var string = "this";
+        // can be writte with single commmas depends what you want to print inside
+
+        var string = 'thi"s';
+        var name = 'awais';
+        var channel = 'AwaisChannel';
+        var message = 'awais is a good boy';   
+        var temp = `${name} is a nice person and he has a channel called ${channel}` ;
+
+        // double commas will displayed and vice versa for single commas
+        // console.log(string + name + message); 
+
+        console.log(temp);
+        var len = name.length;
+        console.log(`Length of name is ${len}`);
+
+        // escape sequence characters \n, \t, \b, \\ and so on
+        console.log("Helo World\nHarry");
+
+        // making string through constructor
+        var y = new String("this");
+        console.log(y);
+
+        // how to insert an element through javascript
+        document.getElementById('content').innerHTML = '<h3> this is an h3 heading </h3>'
+    </script>
+</body>
+</html>

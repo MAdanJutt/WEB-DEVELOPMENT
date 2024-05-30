@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
+    <style>
+        .navbar {
+            background-color: silver;
+            border-radius: 34px;
+        }
+
+        .navbar ul {
+            /* now background appears */
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            /* below line remove the bullets */
+            padding: 3px 3px;
+            margin: 13px 13px;
+        }
+
+        .navbar li a {
+            /* for a tag names ad anchor tag used in li */
+            padding: 4px 4px;
+            /* to remove the line below the links we use  */
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            color: cadetblue;
+        }
+        .search{
+            float: right;
+           color: whitesmoke;
+           padding: 14px 10px;
+        }
+        .navbar input{
+            background-color: lightblue;
+            font-size: 14px;
+            border: 4px solid seagreen;
+            border-radius: 6px;
+            padding: 5px;
+            width: 155px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">contact</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
